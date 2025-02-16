@@ -39,7 +39,7 @@ bot.on("message", async (msg) => {
   const messageId = msg.message_id;
 
   // Сохраняем имя пользователя
-  const name = msg.from.last_name ? ${msg.from.first_name} ${msg.from.last_name} : msg.from.first_name;
+  const name = msg.from.last_name ? `${msg.from.first_name} ${msg.from.last_name}` : msg.from_first_name;
   userNames[userId] = name;
 
   // 🔍 Фильтр логов
